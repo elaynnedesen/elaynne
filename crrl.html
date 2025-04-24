@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Elaynne Cristina</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elaynne Cristina dos Santos Silva</h1>
+    <p>Desenvolvedora em formação | nayne_cristina@hotmail.com</p>
+  </header>
+
+  <section>
+    <h2>Formação Acadêmica</h2>
+    <p><strong>Bacharelado em Serviço Social</strong> – Faculdade do Recife</p>
+
+    <h2>Habilidades Transferíveis</h2>
+    <ul>
+      <li>Organização e análise de dados sociais</li>
+      <li>Gestão de projetos e programas públicos</li>
+      <li>Elaboração de relatórios e documentação técnica</li>
+      <li>Comunicação com equipes interdisciplinares</li>
+    </ul>
+
+    <h2>Cursos Complementares</h2>
+    <ul>
+      <li>Gestão do SICONV – Prefeitura do Cabo (20h)</li>
+      <li>Gestão Financeira e Orçamentária do SUAS – ASCES Unita (40h)</li>
+      <li>Cidadania e Direitos Humanos – ENAP (30h)</li>
+      <li>População em Situação de Rua – ENAP (30h)</li>
+      <li>Direitos da Pessoa Idosa – ENAP (40h)</li>
+      <li>Especialista em Educação – SIMEC-PAR</li>
+    </ul>
+
+    <h2>Projetos em Desenvolvimento</h2>
+    <p>Nenhum projeto publicado ainda. <button class="button" onclick="mostrarProjetos()">Mostrar ideia de projeto</button></p>
+    <div id="projetoExemplo" class="hidden">
+      <p><strong>Nome:</strong> Cadastro de Usuários Simples</p>
+      <p><strong>Descrição:</strong> Um site com formulário para cadastrar, listar e excluir usuários.</p>
+      <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+    </div>
+
+    <h2>Objetivo</h2>
+    <p>
+      Transição de carreira para área de tecnologia, com foco em desenvolvimento web. Busco aplicar minha experiência em gestão pública para construir soluções digitais com impacto social.
+    </p>
+  </section>
+
+  <script>
+    function mostrarProjetos() {
+      const projeto = document.getElementById('projetoExemplo');
+      projeto.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>
